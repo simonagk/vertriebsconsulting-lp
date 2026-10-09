@@ -1,12 +1,12 @@
 // Alle Texte der Seite an einer Stelle. Platzhalter in [eckigen Klammern] ersetzen.
 
 export const brand = {
-  name: "[Firmenname]",
+  name: "steigrate",
   email: "[kontakt@domain.de]",
 };
 
 export const hero = {
-  eyebrow: "Vertriebsberatung für Immobilienmakler & Finanzierungsvermittler",
+  eyebrow: "Vertriebsstrategie für den Mittelstand",
   headline: "[Headline: Mehr qualifizierte Anfragen – ohne mehr Kaltakquise]",
   sub: "[Subline: Wir analysieren Ihren gesamten Vertrieb – von Website über Google Ads bis Empfehlungen – und zeigen, wo Anfragen verloren gehen.]",
   cta: "Bestandsaufnahme anfragen",

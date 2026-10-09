@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "[Firmenname] – Vertriebsberatung für Makler & Finanzierungsvermittler",
+  title: "steigrate – Vertriebsstrategie für den Mittelstand",
   description: "Platzhalter-Beschreibung.",
   // Solange Inhalte Platzhalter sind: nicht indexieren.
   robots: { index: false, follow: false },
