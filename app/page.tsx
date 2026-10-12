@@ -117,7 +117,7 @@ export default function Home() {
       </Section>
 
       {/* Kontakt */}
-      <Section id="kontakt" title="Bestandsaufnahme anfragen">
+      <Section id="kontakt" title="Vertriebskonzept anfragen">
         <ContactForm />
       </Section>
 
