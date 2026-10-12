@@ -58,6 +58,11 @@ export const experience = {
 
 export const pricing = {
   headline: "Einstieg: Bestandsaufnahme",
-  price: "[ab X.XXX € Festpreis]",
-  text: "[Was ist enthalten, wie lange dauert es?]",
+  label: "Festpreis",
+  price: "ab 2.900 € netto",
+  terms: "Einmalig · Keine laufenden Verbindlichkeiten · 14 Tage Durchführung",
+  result: "Ergebnis: Fertiges Vertriebskonzept & priorisierte Maßnahmenliste für Ihr Team.",
+  cta: "Bestandsaufnahme anfragen",
+  disclaimer:
+    "Das auf Ihre Bedürfnisse abgestimmte Festpreisangebot erhalten Sie direkt nach der Anfrage und unserem kurzen Kennenlerngespräch.",
 };

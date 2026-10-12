@@ -101,9 +101,18 @@ export default function Home() {
 
       {/* Preis */}
       <Section title={pricing.headline}>
-        <div className="rounded-lg border border-line bg-white p-6 sm:max-w-md">
-          <p className="text-2xl font-semibold">{pricing.price}</p>
-          <p className="mt-2 text-sm text-muted">{pricing.text}</p>
+        <div className="rounded-lg border border-line bg-white p-6 text-[#37352F] sm:max-w-md sm:p-8">
+          <p className="text-sm font-medium uppercase tracking-wide text-[#787774]">{pricing.label}</p>
+          <p className="mt-2 text-3xl font-semibold tracking-tight">{pricing.price}</p>
+          <p className="mt-2 text-sm leading-relaxed text-[#787774]">{pricing.terms}</p>
+          <p className="mt-6 border-t border-line pt-6 leading-relaxed">{pricing.result}</p>
+          <a
+            href="#kontakt"
+            className="mt-6 block w-full rounded-md bg-accent px-6 py-3 text-center font-medium text-white hover:opacity-90"
+          >
+            {pricing.cta}
+          </a>
+          <p className="mt-3 text-xs leading-relaxed text-[#787774]">{pricing.disclaimer}</p>
         </div>
       </Section>
 
