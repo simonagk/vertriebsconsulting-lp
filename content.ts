@@ -31,9 +31,9 @@ export const stepsIntro =
   "Schritt 01 und 02 erfolgen als fester 14-Tage-Prozess. Nach zwei Wochen liegt Ihr fertig ausgearbeitetes Konzept für den Vertrieb vor.";
 
 export const steps = [
-  { title: "Bestandsaufnahme", text: "[Analyse bestehender Vertriebskanäle, Pipeline-Kennzahlen und Deals. Ergebnis: Schwachstellen-Matrix & Daten-Status-Quo.]" },
-  { title: "Sales Architecture Konzept", text: "[GTM-Kanalpriorisierung, Pitch-Skripte & Pipeline-Struktur. Ergebnis: Fertiges B2B Sales Playbook für das interne Team.]" },
-  { title: "Post-Sprint Review (optional)", text: "[Wöchentliches Daten- & Pipeline-Sparring zur Begleitung der teaminternen Umsetzung. Keine operative Akquise durch uns.]" },
+  { title: "Bestandsaufnahme", text: "[Analyse bestehender Vertriebskanäle, Kennzahlen und Verkaufsabschlüsse. Ergebnis: Schwachstellen-Matrix & Daten-Status-Quo.]" },
+  { title: "Vertriebskonzept & Systemaufbau", text: "[Priorisierung der besten Vertriebskanäle, Gesprächsleitfäden & Ablaufstruktur. Ergebnis: Fertiges Vertriebskonzept inklusive priorisierter Maßnahmenliste für Ihr internes Team.]" },
+  { title: "Begleitende Nachbereitung (optional)", text: "[Wöchentlicher Austausch zu Daten und Verkaufsabläufen zur Begleitung der internen Umsetzung. Keine operative Akquise durch uns.]" },
 ];
 
 export const experience = {
