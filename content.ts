@@ -28,9 +28,9 @@ export const usps = [
 ];
 
 export const steps = [
-  { title: "Bestandsaufnahme", text: "[Analyse aller Vertriebskanäle, Kennzahlen, Prozesse. Ergebnis: priorisierte Maßnahmenliste.]" },
-  { title: "Konzept", text: "[Angebot schärfen, Kanäle priorisieren, Quick Wins definieren.]" },
-  { title: "Umsetzung (optional)", text: "[Begleitung oder Steuerung der Umsetzung, z. B. Ads, Website, Anfrageprozess.]" },
+  { title: "Bestandsaufnahme", text: "[Analyse bestehender Vertriebskanäle, Pipeline-Kennzahlen und Deals. Ergebnis: Schwachstellen-Matrix & Daten-Status-Quo.]" },
+  { title: "Sales Architecture Konzept", text: "[GTM-Kanalpriorisierung, Pitch-Skripte & Pipeline-Struktur. Ergebnis: Fertiges B2B Sales Playbook für das interne Team.]" },
+  { title: "Post-Sprint Review (optional)", text: "[Wöchentliches Daten- & Pipeline-Sparring zur Begleitung der teaminternen Umsetzung. Keine operative Akquise durch uns.]" },
 ];
 
 export const experience = {
