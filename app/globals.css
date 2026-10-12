@@ -11,3 +11,40 @@
 
 html { scroll-behavior: smooth; }
 body { background: var(--color-paper); color: var(--color-ink); }
+
+/* Wandernder Farbverlauf im Hintergrund (dezent, hinter allem Inhalt) */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: -25%;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(60px);
+  will-change: transform;
+}
+body::before {
+  background:
+    radial-gradient(35% 40% at 20% 25%, rgba(31, 78, 140, 0.32), transparent 70%),
+    radial-gradient(30% 35% at 80% 70%, rgba(56, 189, 190, 0.26), transparent 70%);
+  animation: drift-a 26s ease-in-out infinite alternate;
+}
+body::after {
+  background:
+    radial-gradient(30% 35% at 70% 20%, rgba(124, 92, 220, 0.20), transparent 70%),
+    radial-gradient(35% 40% at 25% 80%, rgba(31, 78, 140, 0.20), transparent 70%);
+  animation: drift-b 34s ease-in-out infinite alternate;
+}
+@keyframes drift-a {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(8%, 6%) rotate(20deg); }
+  100% { transform: translate(-6%, 10%) rotate(-10deg); }
+}
+@keyframes drift-b {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(-10%, -4%) rotate(-25deg); }
+  100% { transform: translate(6%, -8%) rotate(15deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before, body::after { animation: none; }
+}
