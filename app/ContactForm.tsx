@@ -4,6 +4,7 @@
 // TODO: an Formspree / Make-Webhook / Next.js Route Handler anbinden + Datenschutz-Checkbox ergänzen.
 
 import { useState } from "react";
+import { primaryCta } from "@/content";
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
@@ -30,7 +31,7 @@ export default function ContactForm() {
         type="submit"
         className="justify-self-start rounded-md bg-accent px-6 py-3 font-medium text-white hover:opacity-90"
       >
-        Anfrage senden
+        {primaryCta}
       </button>
     </form>
   );

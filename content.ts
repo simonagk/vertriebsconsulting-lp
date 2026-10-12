@@ -1,5 +1,8 @@
 // Alle Texte der Seite an einer Stelle. Platzhalter in [eckigen Klammern] ersetzen.
 
+// Text aller primären Buttons
+export const primaryCta = "Vertriebskonzept anfragen";
+
 export const brand = {
   name: "steigrate",
   email: "[kontakt@domain.de]",
@@ -9,7 +12,7 @@ export const hero = {
   eyebrow: "Vertriebsstrategie für den Mittelstand",
   headline: "In 14 Tagen zum passenden Vertriebsansatz: Mehr Anfragen & höhere Abschlussraten.",
   sub: "Wir analysieren Ihr Geschäftsmodell und identifizieren passende Vertriebshebel datenbasiert. In zwei Wochen entsteht Ihr glasklares Vertriebskonzept. Individuell abgestimmt auf Ihr Unternehmen und sofort umsetzbar für Ihr Team.",
-  cta: "Bestandsaufnahme anfragen",
+  cta: primaryCta,
 };
 
 export const usps = [
@@ -57,12 +60,12 @@ export const experience = {
 };
 
 export const pricing = {
-  headline: "Einstieg: Bestandsaufnahme",
+  headline: "Der 14-Tage-Sprint",
   label: "Festpreis",
   price: "ab 2.900 € netto",
   terms: "Einmalig · Keine laufenden Verbindlichkeiten · 14 Tage Durchführung",
   result: "Ergebnis: Fertiges Vertriebskonzept & priorisierte Maßnahmenliste für Ihr Team.",
-  cta: "Bestandsaufnahme anfragen",
+  cta: primaryCta,
   disclaimer:
     "Das auf Ihre Bedürfnisse abgestimmte Festpreisangebot erhalten Sie direkt nach der Anfrage und unserem kurzen Kennenlerngespräch.",
 };
