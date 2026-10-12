@@ -7,8 +7,8 @@ export const brand = {
 
 export const hero = {
   eyebrow: "Vertriebsstrategie für den Mittelstand",
-  headline: "[Headline: Mehr qualifizierte Anfragen – ohne mehr Kaltakquise]",
-  sub: "[Subline: Wir analysieren Ihren gesamten Vertrieb – von Website über Google Ads bis Empfehlungen – und zeigen, wo Anfragen verloren gehen.]",
+  headline: "In 14 Tagen zum passenden Vertriebsansatz: Mehr Anfragen & höhere Abschlussraten.",
+  sub: "Wir analysieren Ihr Geschäftsmodell und identifizieren passende Vertriebshebel datenbasiert. In zwei Wochen entsteht Ihr glasklares Vertriebskonzept. Individuell abgestimmt auf Ihr Unternehmen und sofort umsetzbar für Ihr Team.",
   cta: "Bestandsaufnahme anfragen",
 };
 
@@ -26,6 +26,9 @@ export const usps = [
     text: "[Klar abgegrenzte Bestandsaufnahme zum Festpreis. Umsetzung optional – durch uns oder Ihre Dienstleister.]",
   },
 ];
+
+export const stepsIntro =
+  "Schritt 01 und 02 erfolgen als fester 14-Tage-Prozess. Nach zwei Wochen liegt Ihr fertig ausgearbeitetes Konzept für den Vertrieb vor.";
 
 export const steps = [
   { title: "Bestandsaufnahme", text: "[Analyse bestehender Vertriebskanäle, Pipeline-Kennzahlen und Deals. Ergebnis: Schwachstellen-Matrix & Daten-Status-Quo.]" },

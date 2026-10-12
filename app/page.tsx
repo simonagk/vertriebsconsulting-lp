@@ -1,11 +1,22 @@
-import { brand, hero, usps, steps, experience, pricing } from "@/content";
+import { brand, hero, usps, steps, stepsIntro, experience, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 
-function Section({ id, title, children }: { id?: string; title: string; children: React.ReactNode }) {
+function Section({
+  id,
+  title,
+  subtitle,
+  children,
+}: {
+  id?: string;
+  title: string;
+  subtitle?: string;
+  children: React.ReactNode;
+}) {
   return (
     <section id={id} className="border-t border-line py-16 sm:py-20">
       <div className="mx-auto max-w-5xl px-4">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{title}</h2>
+        {subtitle && <p className="mt-3 max-w-2xl text-muted">{subtitle}</p>}
         <div className="mt-8">{children}</div>
       </div>
     </section>
@@ -51,7 +62,7 @@ export default function Home() {
       </Section>
 
       {/* Vorgehen */}
-      <Section title="So arbeiten wir">
+      <Section title="So arbeiten wir" subtitle={stepsIntro}>
         <ol className="grid gap-6 sm:grid-cols-3">
           {steps.map((s, i) => (
             <li key={s.title}>
