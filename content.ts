@@ -17,16 +17,16 @@ export const hero = {
 
 export const usps = [
   {
-    title: "[USP 1: Alle Kanäle, ein Blick]",
-    text: "[Website, Ads, Portale, Empfehlungen, Bestandskunden – wir bewerten den Vertrieb als Ganzes statt nur einen Kanal.]",
+    title: "Ganzheitlicher Blick auf Ihr Vertriebssystem",
+    text: "[Wir bewerten Verkaufsabläufe, Angebot und Kennzahlen als Gesamtsystem. Wir betrachten den Vertrieb als Ganzes statt nur einen einzelnen Kanal.]",
   },
   {
-    title: "[USP 2: Aus der Finanzbranche]",
-    text: "[Erfahrung in regulierten Märkten – wir kennen die Spielregeln von Vermittlern und Maklern.]",
+    title: "Praxiserprobte Strategiekompetenz",
+    text: "[Unsere Verkaufskonzepte stammen direkt aus der Praxis. Wir haben Vertriebsstrukturen in wachstumsstarken Unternehmen und etablierten Firmengruppen erfolgreich mitgestaltet.]",
   },
   {
-    title: "[USP 3: Festpreis statt Retainer]",
-    text: "[Klar abgegrenzte Bestandsaufnahme zum Festpreis. Umsetzung optional – durch uns oder Ihre Dienstleister.]",
+    title: "Festpreis statt offener Beraterstunden",
+    text: "[Sie erhalten einen klar abgegrenzten Sprint zum transparenten Festpreis. Wir arbeiten KI-gestützt für maximale Geschwindigkeit und klare Ergebnisse.]",
   },
 ];
 
