@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import { brand, hero, usps, steps, stepsIntro, experience, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 
@@ -28,7 +30,9 @@ export default function Home() {
     <main>
       {/* Header */}
       <header className="mx-auto flex max-w-5xl items-center justify-between px-4 py-5">
-        <span className="font-semibold">{brand.name}</span>
+        <Link href="/" aria-label={`${brand.name} Startseite`}>
+          <Image src="/logo.png" alt={brand.name} width={857} height={194} priority className="h-8 w-auto sm:h-10" />
+        </Link>
         <a href="#kontakt" className="text-sm font-medium text-accent hover:underline">
           Kontakt
         </a>
