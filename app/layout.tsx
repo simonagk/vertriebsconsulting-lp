@@ -4,6 +4,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "steigrate – Vertriebsstrategie für den Mittelstand",
   description: "Platzhalter-Beschreibung.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/apple-icon.png",
+  },
   // Solange Inhalte Platzhalter sind: nicht indexieren.
   robots: { index: false, follow: false },
 };
