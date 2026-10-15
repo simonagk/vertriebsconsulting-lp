@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { brand, hero, spectrum, usps, steps, stepsIntro, experience, pricing } from "@/content";
 import ContactForm from "./ContactForm";
+import SpectrumSlider from "./SpectrumSlider";
 
 function Section({
   id,
@@ -74,35 +75,7 @@ export default function Home() {
             </div>
 
             {/* Skala mit markiertem Fit-Bereich */}
-            <div className="mt-6 pb-6">
-              <div className="relative">
-                <div
-                  className="h-2 rounded-full bg-gradient-to-r from-[#7c5cdc]/40 via-accent/40 to-[#38bdbe]/40"
-                  aria-hidden
-                />
-                <div
-                  className="absolute top-[-6px] left-[38%] h-5 w-[22%] rounded-full border-2 border-accent bg-accent/15"
-                  aria-hidden
-                />
-              </div>
-              <p className="mt-3 text-center text-xs font-medium text-accent sm:pl-[38%] sm:text-left">
-                ↑ {spectrum.marker}
-              </p>
-            </div>
-
-            {/* Zonen */}
-            <div className="grid gap-6 border-t border-line pt-6 sm:grid-cols-3">
-              {spectrum.zones.map((z) => (
-                <div key={z.title}>
-                  <h3 className="font-semibold">{z.title}</h3>
-                  <ul className="mt-2 space-y-1 text-sm text-muted">
-                    {z.items.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
+            <SpectrumSlider zones={spectrum.zones} marker={spectrum.marker} hint={spectrum.dragHint} />
           </div>
 
           <div className="mt-10 max-w-2xl">

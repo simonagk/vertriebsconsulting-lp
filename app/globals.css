@@ -45,6 +45,13 @@ body::after {
   50%  { transform: translate(-10%, -4%) rotate(-25deg); }
   100% { transform: translate(6%, -8%) rotate(15deg); }
 }
+/* Dezenter Hinweis, dass der Fit-Rahmen verschiebbar ist */
+@keyframes nudge {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-14px); }
+  60% { transform: translateX(14px); }
+}
 @media (prefers-reduced-motion: reduce) {
   body::before, body::after { animation: none; }
+  [role="slider"] { animation: none !important; }
 }

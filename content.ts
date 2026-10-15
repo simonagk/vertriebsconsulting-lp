@@ -38,7 +38,8 @@ export const spectrum = {
       items: ["Events & Messen", "Direkte Ansprache vor Ort", "Persönliches Netzwerk"],
     },
   ],
-  marker: "Ihr Fit liegt irgendwo hier. Selten überall.",
+  dragHint: "↔ Verschieben Sie den Rahmen: Wo liegt Ihr Vertriebs-Fit?",
+  marker: "Ihr Fit liegt irgendwo auf diesem Spektrum. Selten überall.",
   closing: {
     headline: "Weniger Kanäle, mehr Kunden.",
     text: "Wir sagen Ihnen offen, welche ein bis zwei Kanäle sich für Ihr Geschäft lohnen. Und von welchen wir abraten, auch wenn sie gerade im Trend sind.",
