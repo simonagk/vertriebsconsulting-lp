@@ -2,6 +2,8 @@
 
 // Text aller primären Buttons
 export const primaryCta = "Vertriebskonzept anfragen";
+// Hinweis direkt unter jedem primären Button
+export const primaryCtaNote = "30 Minuten Kennenlernen via Telefon/Videotelefonie · Pragmatisch · Unverbindlich";
 
 export const brand = {
   name: "steigrate",
@@ -18,31 +20,31 @@ export const hero = {
 // Problem-Section: Spektrum der Vertriebskanäle (direkt nach dem Hero)
 export const spectrum = {
   eyebrow: "Das Problem",
-  headline: "Die meisten Vertriebsmaßnahmen passen nicht zu Ihrem Geschäft.",
-  sub: "KI-Outreach mit hundert Mails am Tag, LinkedIn-Automationen, Messen, Partnerprogramme: Die Auswahl war nie größer. Die Folge sind meist zu viele halbherzige Versuche statt eines Kanals, der wirklich trägt.",
+  headline: "Die meisten Vertriebsaktivitäten passen nicht zu Ihrem Geschäft.",
+  sub: "Massenhafte E-Mails, automatisierte Nachrichten, Messen oder Empfehlungsprogramme: Die Auswahl an Wegen war nie größer. Die Folge sind oft viele halbherzige Versuche statt eines einzigen Vertriebskanals, der verlässlich Kunden bringt.",
   poles: {
-    left: { label: "Skaliert, aber austauschbar", hint: "Viel Reichweite, wenig Vertrauen" },
-    right: { label: "Persönlich, aber aufwendig", hint: "Viel Vertrauen, wenig Reichweite" },
+    left: { label: "Skalierbar, aber austauschbar", hint: "Hohe Reichweite, wenig Vertrauen" },
+    right: { label: "Persönlich, aber zeitintensiv", hint: "Hohes Vertrauen, geringe Reichweite" },
   },
   zones: [
     {
-      title: "Automatisiert",
-      items: ["KI-gestützter E-Mail-Outreach", "LinkedIn-Automationen", "Performance-Werbung"],
+      title: "Automatisierte Ansprache",
+      items: ["Automatische E-Mail-Systeme", "Kontaktanfragen", "Digitale Werbung"],
     },
     {
-      title: "Partnerschaftlich",
-      items: ["Kooperationen & Tippgeber", "Empfehlungsprogramme", "Branchennetzwerke"],
+      title: "Partnerschaftlicher Vertrieb",
+      items: ["Kooperationen & Tippgeber", "Empfehlungsnetzwerke", "Branchenkontakte"],
     },
     {
-      title: "Persönlich",
-      items: ["Events & Messen", "Direkte Ansprache vor Ort", "Persönliches Netzwerk"],
+      title: "Persönlicher Vertrieb",
+      items: ["Messen & Veranstaltungen", "Direktansprache vor Ort", "Persönliches Netzwerk"],
     },
   ],
   dragHint: "↔ Verschieben Sie den Rahmen: Wo liegt Ihr Vertriebs-Fit?",
-  marker: "Ihr Fit liegt irgendwo auf diesem Spektrum. Selten überall.",
+  marker: "Die passende Lösung für Ihr Unternehmen liegt exakt auf diesem Spektrum. Selten an allen Enden gleichzeitig.",
   closing: {
-    headline: "Weniger Kanäle, mehr Kunden.",
-    text: "Wir sagen Ihnen offen, welche ein bis zwei Kanäle sich für Ihr Geschäft lohnen. Und von welchen wir abraten, auch wenn sie gerade im Trend sind.",
+    headline: "Fokus auf die richtigen Kanäle.",
+    text: "Wir ermitteln für Sie, welche ein bis zwei Vertriebswege für Ihr Angebot wirklich funktionieren. Und von welchen Maßnahmen Sie Abstand nehmen sollten – selbst wenn sie aktuell im Trend liegen.",
   },
 };
 

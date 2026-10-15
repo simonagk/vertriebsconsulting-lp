@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { brand, hero, spectrum, usps, steps, stepsIntro, experience, pricing } from "@/content";
+import { brand, primaryCtaNote, hero, spectrum, usps, steps, stepsIntro, experience, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 import SpectrumSlider from "./SpectrumSlider";
 
@@ -46,12 +46,15 @@ export default function Home() {
           {hero.headline}
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted">{hero.sub}</p>
-        <a
-          href="#kontakt"
-          className="mt-8 inline-block rounded-md bg-accent px-6 py-3 font-medium text-white hover:opacity-90"
-        >
-          {hero.cta}
-        </a>
+        <div className="mt-8">
+          <a
+            href="#kontakt"
+            className="inline-block rounded-md bg-accent px-6 py-3 font-medium text-white hover:opacity-90"
+          >
+            {hero.cta}
+          </a>
+          <p className="mt-2 text-[0.85rem] text-[#787774]">{primaryCtaNote}</p>
+        </div>
       </section>
 
       {/* Problem: Spektrum der Vertriebskanäle */}
@@ -148,6 +151,7 @@ export default function Home() {
           >
             {pricing.cta}
           </a>
+          <p className="mt-2 text-center text-[0.85rem] text-[#787774]">{primaryCtaNote}</p>
           <p className="mt-3 text-xs leading-relaxed text-[#787774]">{pricing.disclaimer}</p>
         </div>
       </Section>
