@@ -3,6 +3,7 @@ import Link from "next/link";
 import { brand, primaryCtaNote, hero, spectrum, usps, steps, stepsIntro, experience, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 import SpectrumSlider from "./SpectrumSlider";
+import UseCases from "./UseCases";
 
 function Section({
   id,
@@ -138,6 +139,9 @@ export default function Home() {
             ))}
           </div>
         </Section>
+
+        {/* Anwendungsfälle */}
+        <UseCases />
 
         {/* Preis */}
         <Section title={pricing.headline}>
