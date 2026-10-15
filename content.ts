@@ -15,6 +15,37 @@ export const hero = {
   cta: primaryCta,
 };
 
+// Problem-Section: Spektrum der Vertriebskanäle (direkt nach dem Hero)
+export const spectrum = {
+  eyebrow: "Das Problem",
+  headline: "Die meisten Vertriebsmaßnahmen passen nicht zu Ihrem Geschäft.",
+  sub: "KI-Outreach mit hundert Mails am Tag, LinkedIn-Automationen, Messen, Partnerprogramme: Die Auswahl war nie größer. Die Folge sind meist zu viele halbherzige Versuche statt eines Kanals, der wirklich trägt.",
+  poles: {
+    left: { label: "Skaliert, aber austauschbar", hint: "Viel Reichweite, wenig Vertrauen" },
+    right: { label: "Persönlich, aber aufwendig", hint: "Viel Vertrauen, wenig Reichweite" },
+  },
+  zones: [
+    {
+      title: "Automatisiert",
+      items: ["KI-gestützter E-Mail-Outreach", "LinkedIn-Automationen", "Performance-Werbung"],
+    },
+    {
+      title: "Partnerschaftlich",
+      items: ["Kooperationen & Tippgeber", "Empfehlungsprogramme", "Branchennetzwerke"],
+    },
+    {
+      title: "Persönlich",
+      items: ["Events & Messen", "Direkte Ansprache vor Ort", "Persönliches Netzwerk"],
+    },
+  ],
+  dragHint: "↔ Verschieben Sie den Rahmen: Wo liegt Ihr Vertriebs-Fit?",
+  marker: "Ihr Fit liegt irgendwo auf diesem Spektrum. Selten überall.",
+  closing: {
+    headline: "Weniger Kanäle, mehr Kunden.",
+    text: "Wir sagen Ihnen offen, welche ein bis zwei Kanäle sich für Ihr Geschäft lohnen. Und von welchen wir abraten, auch wenn sie gerade im Trend sind.",
+  },
+};
+
 export const usps = [
   {
     title: "Ganzheitlicher Blick auf Ihr Vertriebssystem",

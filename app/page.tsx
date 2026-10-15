@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { brand, hero, usps, steps, stepsIntro, experience, pricing } from "@/content";
+import { brand, hero, spectrum, usps, steps, stepsIntro, experience, pricing } from "@/content";
 import ContactForm from "./ContactForm";
+import SpectrumSlider from "./SpectrumSlider";
 
 function Section({
   id,
@@ -51,6 +52,37 @@ export default function Home() {
         >
           {hero.cta}
         </a>
+      </section>
+
+      {/* Problem: Spektrum der Vertriebskanäle */}
+      <section id="spektrum" className="border-t border-line py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-4">
+          <p className="text-sm font-medium uppercase tracking-wide text-accent">{spectrum.eyebrow}</p>
+          <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{spectrum.headline}</h2>
+          <p className="mt-3 max-w-2xl text-muted">{spectrum.sub}</p>
+
+          <div className="mt-10 rounded-lg border border-line bg-white p-6 sm:p-8">
+            {/* Pole */}
+            <div className="flex justify-between gap-6 text-sm">
+              <div>
+                <p className="font-semibold">← {spectrum.poles.left.label}</p>
+                <p className="text-muted">{spectrum.poles.left.hint}</p>
+              </div>
+              <div className="text-right">
+                <p className="font-semibold">{spectrum.poles.right.label} →</p>
+                <p className="text-muted">{spectrum.poles.right.hint}</p>
+              </div>
+            </div>
+
+            {/* Skala mit markiertem Fit-Bereich */}
+            <SpectrumSlider zones={spectrum.zones} marker={spectrum.marker} hint={spectrum.dragHint} />
+          </div>
+
+          <div className="mt-10 max-w-2xl">
+            <p className="text-xl font-semibold tracking-tight">{spectrum.closing.headline}</p>
+            <p className="mt-2 text-muted">{spectrum.closing.text}</p>
+          </div>
+        </div>
       </section>
 
       {/* USPs */}
