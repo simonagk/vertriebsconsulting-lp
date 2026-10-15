@@ -12,7 +12,7 @@ export const brand = {
 
 export const hero = {
   eyebrow: "Vertriebsstrategie für den Mittelstand",
-  headline: "In 14 Tagen zum passenden Vertriebsansatz: Mehr Anfragen & höhere Abschlussraten.",
+  headline: "Vertriebskonzept in 14 Tagen: Die richtigen Hebel für Ihr Wachstum finden.",
   sub: "Wir analysieren Ihr Geschäftsmodell und identifizieren passende Vertriebshebel datenbasiert. In zwei Wochen entsteht Ihr glasklares Vertriebskonzept. Individuell abgestimmt auf Ihr Unternehmen und sofort umsetzbar für Ihr Team.",
   cta: primaryCta,
 };
@@ -20,7 +20,7 @@ export const hero = {
 // Problem-Section: Spektrum der Vertriebskanäle (direkt nach dem Hero)
 export const spectrum = {
   eyebrow: "Das Problem",
-  headline: "Die meisten Vertriebsaktivitäten passen nicht zu Ihrem Geschäft.",
+  headline: "Das Problem: Falsche Vertriebsmaßnahmen und unpassende Vertriebskanäle.",
   sub: "Massenhafte E-Mails, automatisierte Nachrichten, Messen oder Empfehlungsprogramme: Die Auswahl an Wegen war nie größer. Die Folge sind oft viele halbherzige Versuche statt eines einzigen Vertriebskanals, der verlässlich Kunden bringt.",
   poles: {
     left: { label: "Skalierbar, aber austauschbar", hint: "Hohe Reichweite, wenig Vertrauen" },
@@ -93,7 +93,7 @@ export const experience = {
 };
 
 export const pricing = {
-  headline: "Der 14-Tage-Sprint",
+  headline: "Der 14-Tage-Sprint zum transparenten Festpreis.",
   label: "Festpreis",
   price: "ab 2.900 € netto",
   terms: "Einmalig · Keine laufenden Verbindlichkeiten · 14 Tage Durchführung",

@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "steigrate – Vertriebsstrategie für den Mittelstand",
-  description: "Platzhalter-Beschreibung.",
+  title: "Vertriebskonzept in 14 Tagen | steigrate",
+  description:
+    "In 14 Tagen zum fertigen Vertriebskonzept. Wir analysieren Ihre Verkaufsabläufe, identifizieren die stärksten Vertriebskanäle und liefern ein glasklares Vertriebskonzept inkl. Maßnahmenliste zum Festpreis.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
