@@ -20,7 +20,7 @@ export const hero = {
 // Problem-Section: Spektrum der Vertriebskanäle (direkt nach dem Hero)
 export const spectrum = {
   eyebrow: "Das Problem",
-  headline: "Das Problem: Falsche Vertriebsmaßnahmen und unpassende Vertriebskanäle.",
+  headline: "Falsche Vertriebsmaßnahmen und unpassende Vertriebskanäle.",
   sub: "Massenhafte E-Mails, automatisierte Nachrichten, Messen oder Empfehlungsprogramme: Die Auswahl an Wegen war nie größer. Die Folge sind oft viele halbherzige Versuche statt eines einzigen Vertriebskanals, der verlässlich Kunden bringt.",
   poles: {
     left: { label: "Skalierbar, aber austauschbar", hint: "Hohe Reichweite, wenig Vertrauen" },
