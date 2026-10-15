@@ -8,6 +8,9 @@ export const primaryCtaNote = "30 Minuten Kennenlernen via Telefon/Videotelefoni
 export const brand = {
   name: "steigrate",
   email: "[kontakt@domain.de]",
+  claim: "Vertrieb neu geordnet.",
+  mission:
+    "Die Spezialisten für Vertriebskonzepte. Mit der Präzision moderner Datenanalyse, der Praxiserfahrung aus Startups und Mittelstand und der Umsetzungsgeschwindigkeit moderner KI-Systeme.",
 };
 
 export const hero = {

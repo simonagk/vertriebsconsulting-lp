@@ -169,12 +169,21 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-line">
-        <div className="mx-auto flex max-w-5xl flex-wrap justify-between gap-4 px-4 py-8 text-sm text-muted">
-          <span>© {new Date().getFullYear()} {brand.name}</span>
-          <nav className="flex gap-6">
-            <a href="#" className="hover:underline">Impressum</a>
-            <a href="#" className="hover:underline">Datenschutz</a>
-          </nav>
+        <div className="mx-auto max-w-5xl px-4 pt-12">
+          <Link href="/" aria-label={`${brand.name} Startseite`} className="inline-block">
+            <Image src="/logo.png" alt={brand.name} width={857} height={194} className="h-8 w-auto" />
+          </Link>
+          <p className="mt-5 text-sm font-bold uppercase tracking-wide text-[#0052FF]">{brand.claim}</p>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">{brand.mission}</p>
+        </div>
+        <div className="mx-auto mt-10 max-w-5xl px-4">
+          <div className="flex flex-wrap justify-between gap-4 border-t border-line py-8 text-sm text-muted">
+            <span>© {new Date().getFullYear()} {brand.name}</span>
+            <nav className="flex gap-6">
+              <a href="#" className="hover:underline">Impressum</a>
+              <a href="#" className="hover:underline">Datenschutz</a>
+            </nav>
+          </div>
         </div>
       </footer>
     </>
