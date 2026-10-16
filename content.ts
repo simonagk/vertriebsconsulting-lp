@@ -75,23 +75,62 @@ export const steps = [
   { title: "Begleitende Nachbereitung (optional)", text: "[Wöchentlicher Austausch zu Daten und Verkaufsabläufen zur Begleitung der internen Umsetzung. Keine operative Akquise durch uns.]" },
 ];
 
-export const experience = {
-  intro: "[Kurzer Absatz zu Hintergrund und Erfahrung des Teams.]",
-  cases: [
+// Praxisbeispiel: dunkle Section im Stil der Anwendungsfälle
+export const caseStudy = {
+  eyebrow: "Erfolge & Praxis",
+  headline: "Ergebnisse aus der Praxis.",
+  title: "Vom unklaren Vertriebskanälen zum skalierbaren Partnerschaftssystem",
+  situation: {
+    heading: "Ausgangslage",
+    text: "Ein kleines mittelständisches Unternehmen kämpfte mit fehlenden Anfragen von Kunden; trotz hoher Marketingausgaben in Google Werbung. Auch organische Anfragen blieben weit hinter den Erwartungen zurück. Der Umsatz stagnierte auf niedrigem Niveau.",
+  },
+  measures: {
+    heading: "Analyse & Maßnahmen im Sprint",
+    items: [
+      {
+        label: "Definition und Erweiterung der Zielgruppe.",
+        text: "Nach tieferer Analyse stellte sich heraus, dass die falsche Zielgruppe adressiert wurde. Drei unerkannte Zielgruppen wurden ausgearbeitet. Diese neuen Zielgruppen waren schneller abschlussfähig.",
+      },
+      {
+        label: "Webseiten-Anpassung:",
+        text: "Texte, Titel, und die Beschreibung des Kundennutzen wurden geschärft. Ebenso wurde erarbeitet, wie die Suchbegriffe (SEO & SEA), gewählt werden müssen.",
+      },
+      {
+        label: "Partnervermittlung-Systematik:",
+        text: "Erkennung, dass der geeignetste Akquisekanal Partner sind, die unseren Mandanten und dessen Produkte an ihre Kunden empfehlen. Die Akquise dieser Partner wurde durch Aufbau einer klaren Ansprachestrategie inklusive vertraglichem Provisionsmodell mitgedacht.",
+      },
+    ],
+  },
+  result: {
+    heading: "Ergebnis",
+    text: "Unser Vertriebskonzept lieferte klare Zielgruppendefinition, Webseitenanpassungsempfehlungen und Kanaldefinition. Der Mandant hat die Änderungen durchgeführt. Der Mandant war durch die Anpassungen effizient über Suchmaschinen auffindbar und erzielte endlich hohe Anfragenvolumina. Zudem erwies sich das Partner-Netzwerk als bestes Kundenanfragevehikel, welches planbar Neukunden vermittelte. Der Umsatz stieg merklich, obwohl die Marketingausgaben sanken. Grund: Das Partnernetzwerk war rein erfolgsabhängig aufgesetzt und die Google Werbeausgaben sanken dank Optimierung der bespielten Suchbegriffe.",
+  },
+};
+
+// Über uns: Gründerprofile
+export const about = {
+  eyebrow: "Über uns",
+  headline: "Wer hinter dem Vertriebskonzept von steigrate steht.",
+  sub: "Wir verbinden die Geschwindigkeit von Tech-Startups mit der Prozessstärke etablierter Unternehmen.",
+  founders: [
     {
-      title: "[Case 1: z. B. B2B-Dienstleister, Berlin]",
-      result: "[Ergebnis in einer Zahl, z. B. +X % Anfragen in Y Monaten]",
-      text: "[Was war das Problem, was wurde getan?]",
+      name: "[ Name Gründer 1 ]",
+      role: "Innovation-, Strategie- und Vertriebsexperte",
+      text: "Erfahrener Gründer an der Schnittstelle Startup, Mittelstand und Konzern. Er hat mehrere Geschäftsmodelle aufgebaut und Vertriebsprozesse mit und ohne moderne KI-Systeme skaliert.",
+      facts: [
+        { label: "Fokus:", text: "Go-to-Market, Vertriebsstrategie, Positionierung & Marge" },
+        { label: "Hintergrund:", text: "Startups, Corporate Innovation & Strategieberatung" },
+      ],
     },
     {
-      title: "[Case 2]",
-      result: "[Ergebnis]",
-      text: "[Beschreibung]",
+      name: "[ Name Gründer 2 ]",
+      role: "Innovation-, Strategie- und Prozessexperte",
+      text: "Strategieexperte für gewachsene Strukturen. Er begleitet etablierte Unternehmen bei der Modernisierung ihrer (Verkaufs-)Prozesse.",
+      facts: [
+        { label: "Fokus:", text: "Daten, Prozesse & AI-Workflows" },
+        { label: "Hintergrund:", text: "Startups, Corporate Innovation & Strategieberatung" },
+      ],
     },
-  ],
-  team: [
-    { name: "[Name 1]", role: "[Rolle / Hintergrund]" },
-    { name: "[Name 2]", role: "[Rolle / Hintergrund]" },
   ],
 };
 
