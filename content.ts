@@ -79,7 +79,7 @@ export const steps = [
 export const caseStudy = {
   eyebrow: "Erfolge & Praxis",
   headline: "Ergebnisse aus der Praxis.",
-  title: "Vom unklaren Vertriebskanälen zum skalierbaren Partnerschaftssystem",
+  title: "Von unklaren Vertriebskanälen zum skalierbaren Partnerschaftssystem",
   situation: {
     heading: "Ausgangslage",
     text: "Ein kleines mittelständisches Unternehmen kämpfte mit fehlenden Anfragen von Kunden; trotz hoher Marketingausgaben in Google Werbung. Auch organische Anfragen blieben weit hinter den Erwartungen zurück. Der Umsatz stagnierte auf niedrigem Niveau.",
@@ -93,7 +93,7 @@ export const caseStudy = {
       },
       {
         label: "Webseiten-Anpassung:",
-        text: "Texte, Titel, und die Beschreibung des Kundennutzen wurden geschärft. Ebenso wurde erarbeitet, wie die Suchbegriffe (SEO & SEA), gewählt werden müssen.",
+        text: "Texte, Titel, und die Beschreibung des Kundennutzen wurden geschärft. Ebenso wurde erarbeitet, wie die Suchbegriffe (SEO & SEA) gewählt werden müssen.",
       },
       {
         label: "Partnervermittlung-Systematik:",
