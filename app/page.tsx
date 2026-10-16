@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { brand, primaryCtaNote, hero, spectrum, usps, steps, stepsIntro, experience, pricing } from "@/content";
+import { brand, primaryCtaNote, hero, spectrum, usps, steps, stepsIntro, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 import SpectrumSlider from "./SpectrumSlider";
 import UseCases from "./UseCases";
+import CaseStudy from "./CaseStudy";
+import About from "./About";
 
 function Section({
   id,
@@ -115,30 +117,11 @@ export default function Home() {
           </ol>
         </Section>
 
-        {/* Erfahrungen */}
-        <Section title="Erfahrungen">
-          <p className="max-w-2xl text-muted">{experience.intro}</p>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {experience.cases.map((c) => (
-              <div key={c.title} className="rounded-lg border border-line bg-white p-6">
-                <h3 className="font-semibold">{c.title}</h3>
-                <p className="mt-2 text-xl font-semibold text-accent">{c.result}</p>
-                <p className="mt-2 text-sm text-muted">{c.text}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            {experience.team.map((t) => (
-              <div key={t.name} className="flex items-center gap-4">
-                <div className="h-14 w-14 shrink-0 rounded-full bg-line" aria-hidden />
-                <div>
-                  <p className="font-semibold">{t.name}</p>
-                  <p className="text-sm text-muted">{t.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Section>
+        {/* Praxisbeispiel */}
+        <CaseStudy />
+
+        {/* Über uns */}
+        <About />
 
         {/* Anwendungsfälle */}
         <UseCases />
