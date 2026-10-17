@@ -3,7 +3,6 @@ import Link from "next/link";
 import { brand, primaryCtaNote, hero, spectrum, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 import SpectrumSlider from "./SpectrumSlider";
-import CaseStudy from "./CaseStudy";
 import About from "./About";
 import ChannelCard from "./ChannelCard";
 import Scope from "./Scope";
@@ -117,9 +116,6 @@ export default function Home() {
 
         {/* Leistungsumfang */}
         <Scope />
-
-        {/* Praxisbeispiel */}
-        <CaseStudy />
 
         {/* Über uns */}
         <About />

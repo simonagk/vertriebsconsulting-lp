@@ -36,7 +36,7 @@ export const channelCard = {
     drop: "Streichen",
     new: "Neu einführen",
   },
-  note: "Beispiel aus einem Vertriebskonzept, anonymisiert.",
+  note: "Beispielhafte Darstellung.",
 } as const;
 
 // Problem-Section: Spektrum der Vertriebskanäle (direkt nach dem Hero)
@@ -123,38 +123,6 @@ export const scope = {
   effort: {
     label: "Ihr Aufwand",
     text: "Zwei Termine à\u00a090\u00a0Minuten und die Bereitstellung vorhandener Zahlen.",
-  },
-};
-
-// Praxisbeispiel: dunkle Section im Stil der Anwendungsfälle
-export const caseStudy = {
-  eyebrow: "Erfolge & Praxis",
-  headline: "Ergebnisse aus der Praxis.",
-  title: "Von unklaren Vertriebskanälen zum skalierbaren Partnerschaftssystem",
-  situation: {
-    heading: "Ausgangslage",
-    text: "Ein kleines mittelständisches Unternehmen kämpfte mit fehlenden Anfragen von Kunden; trotz hoher Marketingausgaben in Google Werbung. Auch organische Anfragen blieben weit hinter den Erwartungen zurück. Der Umsatz stagnierte auf niedrigem Niveau.",
-  },
-  measures: {
-    heading: "Analyse & Maßnahmen im Sprint",
-    items: [
-      {
-        label: "Definition und Erweiterung der Zielgruppe.",
-        text: "Nach tieferer Analyse stellte sich heraus, dass die falsche Zielgruppe adressiert wurde. Drei unerkannte Zielgruppen wurden ausgearbeitet. Diese neuen Zielgruppen waren schneller abschlussfähig.",
-      },
-      {
-        label: "Webseiten-Anpassung:",
-        text: "Texte, Titel, und die Beschreibung des Kundennutzen wurden geschärft. Ebenso wurde erarbeitet, wie die Suchbegriffe (SEO & SEA) gewählt werden müssen.",
-      },
-      {
-        label: "Partnervermittlung-Systematik:",
-        text: "Erkennung, dass der geeignetste Akquisekanal Partner sind, die unseren Mandanten und dessen Produkte an ihre Kunden empfehlen. Die Akquise dieser Partner wurde durch Aufbau einer klaren Ansprachestrategie inklusive vertraglichem Provisionsmodell mitgedacht.",
-      },
-    ],
-  },
-  result: {
-    heading: "Ergebnis",
-    text: "Unser Vertriebskonzept lieferte klare Zielgruppendefinition, Webseitenanpassungsempfehlungen und Kanaldefinition. Der Mandant hat die Änderungen durchgeführt. Der Mandant war durch die Anpassungen effizient über Suchmaschinen auffindbar und erzielte endlich hohe Anfragenvolumina. Zudem erwies sich das Partner-Netzwerk als bestes Kundenanfragevehikel, welches planbar Neukunden vermittelte. Der Umsatz stieg merklich, obwohl die Marketingausgaben sanken. Grund: Das Partnernetzwerk war rein erfolgsabhängig aufgesetzt und die Google Werbeausgaben sanken dank Optimierung der bespielten Suchbegriffe.",
   },
 };
 
