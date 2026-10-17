@@ -12,38 +12,37 @@ export default function About() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {about.founders.map((f) => (
-            <article key={f.name} className="flex flex-col rounded-lg border border-[#E5E7EB] bg-white p-6 sm:p-8">
-              <div className="flex items-center gap-4">
-                {/* Platzhalter für Porträtfoto (1:1) */}
+            <article key={f.name} className="flex flex-col rounded-lg border border-[#E5E7EB] bg-white p-5 sm:p-6">
+              {/* Unter 1024 px steht die Rolle unter Foto und Name, damit sie in eine Zeile passt */}
+              <div className="grid grid-cols-[2.75rem_minmax(0,1fr)] items-center gap-x-3 lg:grid-cols-[3.5rem_minmax(0,1fr)] lg:gap-x-4">
+                {/* Platzhalter für rundes Porträtfoto */}
                 <div
-                  className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md border border-[#E5E7EB] bg-[#F3F4F6] text-[#9CA3AF]"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E5E7EB] bg-[#F3F4F6] text-[#9CA3AF] lg:row-span-2 lg:h-14 lg:w-14"
                   aria-hidden
                 >
-                  <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6 lg:h-7 lg:w-7" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <circle cx="12" cy="9" r="4" />
                     <path d="M4 21a8 8 0 0 1 16 0" strokeLinecap="round" />
                   </svg>
                 </div>
-                <div className="min-w-0">
-                  <h3 className="text-lg font-semibold">{f.name}</h3>
-                  <p className="mt-1 inline-block rounded border border-[#E5E7EB] bg-[#FAFAFA] px-2 py-0.5 text-xs font-medium text-[#37352F]">
-                    {f.role}
-                  </p>
-                </div>
+                <h3 className="text-lg font-semibold leading-snug lg:self-end">{f.name}</h3>
+                <p className="col-span-2 mt-2 text-[15px] font-medium text-accent lg:col-span-1 lg:col-start-2 lg:mt-0 lg:self-start">
+                  {f.role}
+                </p>
               </div>
 
-              <p className="mt-5 text-sm leading-relaxed text-[#37352F]">{f.text}</p>
-
-              <ul className="mt-5 space-y-2 border-t border-[#E5E7EB] pt-5">
-                {f.facts.map((x) => (
-                  <li key={x.label} className="flex gap-3 text-sm leading-relaxed text-[#37352F]">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
-                    <p>
-                      <strong className="font-semibold text-[#191919]">{x.label}</strong> {x.text}
-                    </p>
+              <ul className="mb-3 mt-3 space-y-1">
+                {f.points.map((pt) => (
+                  <li key={pt} className="flex gap-3 text-[15px] leading-normal text-[#37352F] lg:leading-relaxed">
+                    <span className="mt-[0.5rem] h-1.5 lg:mt-[0.6rem] w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
+                    <span>{pt}</span>
                   </li>
                 ))}
               </ul>
+
+              <p className="mt-auto border-t border-[#E5E7EB] pt-3 text-[15px] leading-normal text-[#37352F] lg:leading-relaxed">
+                <strong className="font-semibold text-[#191919]">{about.sprintLabel}</strong> {f.sprint}
+              </p>
             </article>
           ))}
         </div>
