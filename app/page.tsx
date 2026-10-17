@@ -3,7 +3,6 @@ import Link from "next/link";
 import { brand, primaryCtaNote, hero, spectrum, solution, usps, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 import SpectrumSlider from "./SpectrumSlider";
-import UseCases from "./UseCases";
 import CaseStudy from "./CaseStudy";
 import About from "./About";
 import ChannelCard from "./ChannelCard";
@@ -75,13 +74,32 @@ export default function Home() {
         {/* Problem: Spektrum der Vertriebskanäle */}
         <section id="spektrum" className="border-t border-line py-16 sm:py-20">
           <div className="mx-auto max-w-5xl px-4">
-            <p className="text-sm font-medium uppercase tracking-wide text-accent">{spectrum.eyebrow}</p>
-            <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{spectrum.headline}</h2>
-            <p className="mt-3 max-w-2xl text-muted">{spectrum.sub}</p>
+            <hgroup>
+              <p className="text-sm font-medium uppercase tracking-wide text-accent">{spectrum.eyebrow}</p>
+              <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{spectrum.headline}</h2>
+            </hgroup>
 
-            <div className="mt-10 rounded-lg border border-line bg-white p-6 sm:p-8">
+            {/* Drei typische Situationen in Kundensprache */}
+            <div className="mt-10 grid gap-4 md:grid-cols-3 md:gap-6">
+              {spectrum.situations.map((s) => (
+                <figure key={s.quote} className="flex flex-col rounded-lg border border-line bg-white p-6">
+                  <blockquote className="text-lg font-semibold leading-snug tracking-tight">
+                    <p>„{s.quote}“</p>
+                  </blockquote>
+                  <figcaption className="mt-4 border-t border-line pt-4 text-[15px] leading-relaxed text-[#3d4350]">
+                    <strong className="font-semibold text-accent">{spectrum.answerLabel}</strong> {s.answer}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+
+            {/* Schieberegler: Spektrum der Vertriebswege */}
+            <div className="mt-12 rounded-lg border border-line bg-white p-6 sm:p-8">
+              <h3 className="text-xl font-semibold tracking-tight">{spectrum.sliderHeading}</h3>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{spectrum.sub}</p>
+
               {/* Pole */}
-              <div className="flex justify-between gap-6 text-sm">
+              <div className="mt-6 flex justify-between gap-6 text-sm">
                 <div>
                   <p className="font-semibold">← {spectrum.poles.left.label}</p>
                   <p className="text-muted">{spectrum.poles.left.hint}</p>
@@ -92,10 +110,8 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Skala mit markiertem Fit-Bereich */}
-              <SpectrumSlider zones={spectrum.zones} marker={spectrum.marker} hint={spectrum.dragHint} />
+              <SpectrumSlider zones={spectrum.zones} marker={spectrum.marker} />
             </div>
-
           </div>
         </section>
 
@@ -120,9 +136,6 @@ export default function Home() {
 
         {/* Über uns */}
         <About />
-
-        {/* Anwendungsfälle */}
-        <UseCases />
 
         {/* Preis */}
         <Section title={pricing.headline}>
