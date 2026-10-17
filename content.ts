@@ -42,7 +42,24 @@ export const channelCard = {
 // Problem-Section: Spektrum der Vertriebskanäle (direkt nach dem Hero)
 export const spectrum = {
   eyebrow: "Das Problem",
-  headline: "Falsche Vertriebsmaßnahmen und unpassende Vertriebskanäle.",
+  headline: "Kommt Ihnen das bekannt vor?",
+  // Drei typische Situationen in Kundensprache, jeweils mit unserer Antwort
+  situations: [
+    {
+      quote: "Neue Kunden kommen fast nur über mich.",
+      answer: "Wir dokumentieren erprobte Argumente und Gesprächsabläufe, damit Ihr Team verkaufen kann.",
+    },
+    {
+      quote: "Wir probieren Messe, Ads und LinkedIn, aber nichts trägt richtig.",
+      answer: "Wir bewerten Ihre Kanäle und sagen klar, welche Sie ausbauen und welche Sie streichen.",
+    },
+    {
+      quote: "Angebote gehen raus, dann passiert wochenlang nichts.",
+      answer: "Wir schärfen Ihre Angebote und bauen einen festen Nachfassablauf auf.",
+    },
+  ],
+  answerLabel: "Was wir tun:",
+  sliderHeading: "Wo liegt Ihr Vertrieb heute?",
   sub: "Massenhafte E-Mails, automatisierte Nachrichten, Messen oder Empfehlungsprogramme: Die Auswahl an Wegen war nie größer. Die Folge sind oft viele halbherzige Versuche statt eines einzigen Vertriebskanals, der verlässlich Kunden bringt.",
   poles: {
     left: { label: "Skalierbar, aber austauschbar", hint: "Hohe Reichweite, wenig Vertrauen" },
@@ -52,18 +69,22 @@ export const spectrum = {
     {
       title: "Automatisierte Ansprache",
       items: ["Automatische E-Mail-Systeme", "Kontaktanfragen", "Digitale Werbung"],
+      // TODO PRÜFEN: Satz von uns formuliert, noch nicht freigegeben
+      sentence: "Große Reichweite mit wenig Aufwand pro Kontakt, aber wenig Vertrauen und leicht austauschbar.",
     },
     {
       title: "Partnerschaftlicher Vertrieb",
       items: ["Kooperationen & Tippgeber", "Empfehlungsnetzwerke", "Branchenkontakte"],
+      sentence: "Vertrauen über Dritte, planbar, wenn Partner systematisch geführt werden.",
     },
     {
       title: "Persönlicher Vertrieb",
       items: ["Messen & Veranstaltungen", "Direktansprache vor Ort", "Persönliches Netzwerk"],
+      // TODO PRÜFEN: Satz von uns formuliert, noch nicht freigegeben
+      sentence: "Hohes Vertrauen und gute Abschlüsse, aber zeitintensiv und schwer zu vervielfachen.",
     },
   ],
-  dragHint: "↔ Verschieben Sie den Rahmen: Wo liegt Ihr Vertriebs-Fit?",
-  marker: "Die passende Lösung für Ihr Unternehmen liegt exakt auf diesem Spektrum. Selten an allen Enden gleichzeitig.",
+  marker: "Die meisten Unternehmen brauchen ein bis zwei Wege, nicht alle gleichzeitig.",
 };
 
 // Lösung: Einleitung und Überschrift über den drei Karten
@@ -188,37 +209,6 @@ export const about = {
     },
   ],
 };
-
-// Anwendungsfälle: dunkle Kontrast-Section direkt vor dem Preis
-export const useCases = {
-  eyebrow: "Anwendungsfälle",
-  headline: "Wann der 14-Tage-Sprint den größten Hebel hat",
-  sub: "Wir lösen die typischen Engpässe im Vertrieb. Wir schaffen klare Strukturen für Ihr Team.",
-  problemLabel: "Problem",
-  solutionLabel: "Lösung",
-  cases: [
-    {
-      icon: "offer",
-      title: "Angebote ohne Abschluss",
-      problem: "Angebote werden pünktlich verschickt. Die Entscheidung zieht sich danach oft über Wochen hin.",
-      solution: "Wir schärfen Ihre Angebotstextierung und bauen eine verbindliche Nachfass-Struktur auf.",
-    },
-    {
-      icon: "team",
-      title: "Vertrieb hängt nur am Inhaber",
-      problem: "Erfolge gelingen bisher nur der Geschäftsführung. Das Wissen liegt komplett im Kopf einzelner Personen.",
-      solution: "Wir dokumentieren erprobte Gesprächsleitfäden und Argumente für Ihr gesamtes Team.",
-    },
-    {
-      icon: "channel",
-      title: "Welcher Vertriebskanal funktioniert?",
-      problem:
-        "Ressourcen fließen beliebig in viele verschiedene Werbekanäle ohne zu wissen warum. Kein Kanal funktioniert richtig. Kundenanfragen bleiben aus.",
-      solution:
-        "Wir identifizieren den für Sie besten Werbekanal und streichen unrentable Wege. Kundenanfragen steigen so merklich.",
-    },
-  ],
-} as const;
 
 export const pricing = {
   headline: "Der 14-Tage-Sprint zum transparenten Festpreis.",

@@ -55,3 +55,31 @@ body::after {
   body::before, body::after { animation: none; }
   [role="slider"] { animation: none !important; }
 }
+
+/* Schieberegler im Problem-Abschnitt: großer Griff (44 px) für Touch */
+.spectrum-range::-webkit-slider-runnable-track { height: 44px; background: transparent; }
+.spectrum-range::-moz-range-track { height: 44px; background: transparent; }
+.spectrum-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: grab;
+}
+.spectrum-range::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: grab;
+}
+.spectrum-range:active::-webkit-slider-thumb { cursor: grabbing; }
+.spectrum-range:focus { outline: none; }
+.spectrum-range:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px rgb(28 96 226 / 0.3); }
+.spectrum-range:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px rgb(28 96 226 / 0.3); }
