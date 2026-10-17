@@ -9,11 +9,13 @@ import About from "./About";
 
 function Section({
   id,
+  eyebrow,
   title,
   subtitle,
   children,
 }: {
   id?: string;
+  eyebrow?: string;
   title: string;
   subtitle?: string;
   children: React.ReactNode;
@@ -21,8 +23,11 @@ function Section({
   return (
     <section id={id} className="border-t border-line py-16 sm:py-20">
       <div className="mx-auto max-w-5xl px-4">
-        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{title}</h2>
-        {subtitle && <p className="mt-3 max-w-2xl text-muted">{subtitle}</p>}
+        <hgroup>
+          {eyebrow && <p className="mb-3 text-sm font-medium uppercase tracking-wide text-accent">{eyebrow}</p>}
+          <h2 className="max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{title}</h2>
+          {subtitle && <p className="mt-3 max-w-2xl text-muted">{subtitle}</p>}
+        </hgroup>
         <div className="mt-8">{children}</div>
       </div>
     </section>
@@ -93,7 +98,7 @@ export default function Home() {
         </section>
 
         {/* USPs */}
-        <Section title="Warum Unternehmen ihr Vertriebssystem mit uns optimieren.">
+        <Section eyebrow="Die Lösung" title="Warum Unternehmen ihr Vertriebssystem mit uns optimieren.">
           <div className="grid gap-6 sm:grid-cols-3">
             {usps.map((u) => (
               <div key={u.title} className="rounded-lg border border-line bg-white p-6">
@@ -105,7 +110,7 @@ export default function Home() {
         </Section>
 
         {/* Vorgehen */}
-        <Section title="Ihr Vertriebskonzept als strukturierter 14-Tage-Prozess." subtitle={stepsIntro}>
+        <Section eyebrow="Der Prozess" title="Ihr Vertriebskonzept als strukturierter 14-Tage-Prozess." subtitle={stepsIntro}>
           <ol className="grid gap-6 sm:grid-cols-3">
             {steps.map((s, i) => (
               <li key={s.title}>
