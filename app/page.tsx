@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { brand, primaryCtaNote, hero, spectrum, solution, usps, pricing } from "@/content";
+import { brand, primaryCtaNote, hero, spectrum, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 import SpectrumSlider from "./SpectrumSlider";
 import CaseStudy from "./CaseStudy";
@@ -115,19 +115,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* USPs */}
-        <Section eyebrow={solution.eyebrow} title={solution.headline} subtitle={solution.sub}>
-          <h3 className="text-xl font-semibold tracking-tight">{solution.cardsHeadline}</h3>
-          <div className="mt-6 grid gap-6 sm:grid-cols-3">
-            {usps.map((u) => (
-              <div key={u.title} className="rounded-lg border border-line bg-white p-6">
-                <h4 className="font-semibold">{u.title}</h4>
-                <p className="mt-2 text-sm text-muted">{u.text}</p>
-              </div>
-            ))}
-          </div>
-        </Section>
-
         {/* Leistungsumfang */}
         <Scope />
 
@@ -142,6 +129,7 @@ export default function Home() {
           <div className="rounded-lg border border-line bg-white p-6 text-[#37352F] sm:max-w-md sm:p-8">
             <p className="text-sm font-medium uppercase tracking-wide text-[#787774]">{pricing.label}</p>
             <p className="mt-2 text-3xl font-semibold tracking-tight">{pricing.price}</p>
+            <p className="mt-2 text-[15px] font-medium leading-relaxed">{pricing.priceNote}</p>
             <p className="mt-2 text-sm leading-relaxed text-[#787774]">{pricing.terms}</p>
             <p className="mt-6 border-t border-line pt-6 leading-relaxed">{pricing.result}</p>
             <a

@@ -60,7 +60,7 @@ export const spectrum = {
   ],
   answerLabel: "Was wir tun:",
   sliderHeading: "Wo liegt Ihr Vertrieb heute?",
-  sub: "Massenhafte E-Mails, automatisierte Nachrichten, Messen oder Empfehlungsprogramme: Die Auswahl an Wegen war nie größer. Die Folge sind oft viele halbherzige Versuche statt eines einzigen Vertriebskanals, der verlässlich Kunden bringt.",
+  sub: "Jeder Vertriebsweg hat Stärken und Grenzen. Schieben Sie den Regler dorthin, wo Ihre Kunden heute herkommen.",
   poles: {
     left: { label: "Skalierbar, aber austauschbar", hint: "Hohe Reichweite, wenig Vertrauen" },
     right: { label: "Persönlich, aber zeitintensiv", hint: "Hohes Vertrauen, geringe Reichweite" },
@@ -85,34 +85,12 @@ export const spectrum = {
   marker: "Die meisten Unternehmen brauchen ein bis zwei Wege, nicht alle gleichzeitig.",
 };
 
-// Lösung: Einleitung und Überschrift über den drei Karten
-export const solution = {
-  eyebrow: "Die Lösung",
-  headline: "Fokus auf die richtigen Kanäle.",
-  sub: "Wir ermitteln für Sie, welche ein bis zwei Vertriebswege für Ihr Angebot wirklich funktionieren. Und von welchen Maßnahmen Sie Abstand nehmen sollten.",
-  cardsHeadline: "Warum Unternehmen ihr Vertriebssystem mit uns optimieren.",
-};
-
-export const usps = [
-  {
-    title: "Ganzheitlicher Blick auf Ihr Vertriebssystem",
-    text: "[Wir bewerten Verkaufsabläufe, Angebot und Kennzahlen als Gesamtsystem. Wir betrachten den Vertrieb als Ganzes statt nur einen einzelnen Kanal.]",
-  },
-  {
-    title: "Praxiserprobte Strategiekompetenz",
-    text: "[Unsere Verkaufskonzepte stammen direkt aus der Praxis. Wir haben Vertriebsstrukturen in wachstumsstarken Unternehmen und etablierten Firmengruppen erfolgreich mitgestaltet.]",
-  },
-  {
-    title: "Festpreis statt offener Beraterstunden",
-    text: "[Sie erhalten einen klar abgegrenzten Sprint zum transparenten Festpreis. Wir arbeiten KI-gestützt für maximale Geschwindigkeit und klare Ergebnisse.]",
-  },
-];
-
 // Leistungsumfang: ersetzt die frühere Prozess-Sektion.
 // \u00a0 = geschütztes Leerzeichen, damit Zahl und Einheit nicht getrennt werden.
 export const scope = {
-  eyebrow: "Der Prozess",
+  eyebrow: "Leistungsumfang",
   headline: "Das liegt nach 14\u00a0Tagen auf Ihrem Tisch.",
+  sub: "Sie bekommen kein Strategiepapier für die Schublade, sondern eine klare Entscheidung je Vertriebsweg und einen Plan, den Ihr Team umsetzen kann.",
   deliverables: {
     heading: "Das erhalten Sie",
     items: [
@@ -211,6 +189,7 @@ export const pricing = {
   headline: "Der 14-Tage-Sprint zum transparenten Festpreis.",
   label: "Festpreis",
   price: "ab 2.900 € netto",
+  priceNote: "Fester Umfang, fester Preis. Keine offenen Beraterstunden.",
   terms: "Einmalig · Keine laufenden Verbindlichkeiten · 14 Tage Durchführung",
   result: "Ergebnis: Fertiges Vertriebskonzept & priorisierte Maßnahmenliste für Ihr Team.",
   cta: primaryCta,

@@ -8,6 +8,7 @@ export default function Scope() {
         <hgroup>
           <p className="mb-3 text-sm font-medium uppercase tracking-wide text-accent">{scope.eyebrow}</p>
           <h2 className="max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{scope.headline}</h2>
+          <p className="mt-3 max-w-2xl text-muted">{scope.sub}</p>
         </hgroup>
 
         {/* Das erhalten Sie */}
