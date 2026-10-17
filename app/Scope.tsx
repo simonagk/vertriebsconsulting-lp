@@ -55,7 +55,7 @@ export default function Scope() {
           })}
         </ol>
 
-        {/* Ihr Aufwand. TODO PRÜFEN: Aufwand vor Veröffentlichung bestätigen (Text in content.ts, scope.effort) */}
+        {/* Ihr Aufwand */}
         <p className="mt-6 rounded-lg border border-line border-l-4 border-l-accent bg-white px-5 py-4 text-[15px] leading-relaxed sm:mt-10">
           <strong className="font-semibold">{effort.label}:</strong> {effort.text}
         </p>

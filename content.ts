@@ -69,7 +69,6 @@ export const spectrum = {
     {
       title: "Automatisierte Ansprache",
       items: ["Automatische E-Mail-Systeme", "Kontaktanfragen", "Digitale Werbung"],
-      // TODO PRÜFEN: Satz von uns formuliert, noch nicht freigegeben
       sentence: "Große Reichweite mit wenig Aufwand pro Kontakt, aber wenig Vertrauen und leicht austauschbar.",
     },
     {
@@ -80,7 +79,6 @@ export const spectrum = {
     {
       title: "Persönlicher Vertrieb",
       items: ["Messen & Veranstaltungen", "Direktansprache vor Ort", "Persönliches Netzwerk"],
-      // TODO PRÜFEN: Satz von uns formuliert, noch nicht freigegeben
       sentence: "Hohes Vertrauen und gute Abschlüsse, aber zeitintensiv und schwer zu vervielfachen.",
     },
   ],
@@ -146,7 +144,6 @@ export const scope = {
   },
   effort: {
     label: "Ihr Aufwand",
-    // TODO PRÜFEN: Aufwand vor Veröffentlichung bestätigen
     text: "Zwei Termine à\u00a090\u00a0Minuten und die Bereitstellung vorhandener Zahlen.",
   },
 };
