@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { brand, primaryCtaNote, hero, spectrum, usps, steps, stepsIntro, pricing } from "@/content";
+import { brand, primaryCtaNote, hero, spectrum, solution, usps, steps, stepsIntro, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 import SpectrumSlider from "./SpectrumSlider";
 import UseCases from "./UseCases";
@@ -90,19 +90,16 @@ export default function Home() {
               <SpectrumSlider zones={spectrum.zones} marker={spectrum.marker} hint={spectrum.dragHint} />
             </div>
 
-            <div className="mt-10 max-w-2xl">
-              <h3 className="text-xl font-semibold tracking-tight">{spectrum.closing.headline}</h3>
-              <p className="mt-2 text-muted">{spectrum.closing.text}</p>
-            </div>
           </div>
         </section>
 
         {/* USPs */}
-        <Section eyebrow="Die Lösung" title="Warum Unternehmen ihr Vertriebssystem mit uns optimieren.">
-          <div className="grid gap-6 sm:grid-cols-3">
+        <Section eyebrow={solution.eyebrow} title={solution.headline} subtitle={solution.sub}>
+          <h3 className="text-xl font-semibold tracking-tight">{solution.cardsHeadline}</h3>
+          <div className="mt-6 grid gap-6 sm:grid-cols-3">
             {usps.map((u) => (
               <div key={u.title} className="rounded-lg border border-line bg-white p-6">
-                <h3 className="font-semibold">{u.title}</h3>
+                <h4 className="font-semibold">{u.title}</h4>
                 <p className="mt-2 text-sm text-muted">{u.text}</p>
               </div>
             ))}
