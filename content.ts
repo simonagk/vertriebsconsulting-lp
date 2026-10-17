@@ -45,10 +45,14 @@ export const spectrum = {
   ],
   dragHint: "↔ Verschieben Sie den Rahmen: Wo liegt Ihr Vertriebs-Fit?",
   marker: "Die passende Lösung für Ihr Unternehmen liegt exakt auf diesem Spektrum. Selten an allen Enden gleichzeitig.",
-  closing: {
-    headline: "Fokus auf die richtigen Kanäle.",
-    text: "Wir ermitteln für Sie, welche ein bis zwei Vertriebswege für Ihr Angebot wirklich funktionieren. Und von welchen Maßnahmen Sie Abstand nehmen sollten – selbst wenn sie aktuell im Trend liegen.",
-  },
+};
+
+// Lösung: Einleitung und Überschrift über den drei Karten
+export const solution = {
+  eyebrow: "Die Lösung",
+  headline: "Fokus auf die richtigen Kanäle.",
+  sub: "Wir ermitteln für Sie, welche ein bis zwei Vertriebswege für Ihr Angebot wirklich funktionieren. Und von welchen Maßnahmen Sie Abstand nehmen sollten.",
+  cardsHeadline: "Warum Unternehmen ihr Vertriebssystem mit uns optimieren.",
 };
 
 export const usps = [
