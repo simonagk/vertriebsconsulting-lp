@@ -23,7 +23,9 @@ export const hero = {
 
 // Beispielkarte im Hero, als Ausschnitt aus einem Vertriebskonzept
 export const channelCard = {
-  title: "Kanalbewertung",
+  label: "Auszug aus Ihrem Vertriebskonzept",
+  title: "Kanalbewertung (Beispiel)",
+  subtitle: "Baustein 1 von 4: jeder Vertriebsweg mit klarer Empfehlung.",
   rows: [
     { channel: "Partner und Tippgeber", status: "expand", reason: "Höchste Abschlussquote, bisher nicht systematisch genutzt." },
     { channel: "Google Ads", status: "reduce", reason: "Budget auf wenige kaufnahe Suchbegriffe begrenzen." },
@@ -36,7 +38,6 @@ export const channelCard = {
     drop: "Streichen",
     new: "Neu einführen",
   },
-  note: "Beispielhafte Darstellung.",
 } as const;
 
 // Problem-Section: Spektrum der Vertriebskanäle (direkt nach dem Hero)

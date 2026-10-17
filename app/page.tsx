@@ -49,7 +49,7 @@ export default function Home() {
 
       <main>
         {/* Hero */}
-        <section className="mx-auto grid max-w-5xl gap-12 px-4 pb-20 pt-12 sm:pt-20 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-10">
+        <section className="mx-auto grid max-w-5xl gap-8 px-4 pb-20 pt-12 sm:pt-20 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-10">
           <div className="min-w-0">
             <h1 className="text-sm font-medium uppercase tracking-wide text-accent">{hero.eyebrow}</h1>
             <p className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-balance sm:text-5xl">
