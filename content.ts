@@ -161,26 +161,28 @@ export const caseStudy = {
 // Über uns: Gründerprofile
 export const about = {
   eyebrow: "Über uns",
-  headline: "Wer hinter dem Vertriebskonzept von steigrate steht.",
-  sub: "Wir verbinden die Geschwindigkeit von Tech-Startups mit der Prozessstärke etablierter Unternehmen.",
+  headline: "Wer hinter steigrate steht.",
+  sub: "Einer von uns hat Vertrieb in wachsenden Unternehmen aufgebaut, der andere kennt die Strukturen großer Organisationen. Gemeinsam haben wir ein Startup aus einem Konzern heraus gegründet und an den Markt gebracht.",
+  sprintLabel: "Im Sprint:",
   founders: [
     {
-      name: "[ Name Gründer 1 ]",
-      role: "Innovation-, Strategie- und Vertriebsexperte",
-      text: "Erfahrener Gründer an der Schnittstelle Startup, Mittelstand und Konzern. Er hat mehrere Geschäftsmodelle aufgebaut und Vertriebsprozesse mit und ohne moderne KI-Systeme skaliert.",
-      facts: [
-        { label: "Fokus:", text: "Go-to-Market, Vertriebsstrategie, Positionierung & Marge" },
-        { label: "Hintergrund:", text: "Startups, Corporate Innovation & Strategieberatung" },
+      name: "tbd 1",
+      role: "Vertriebsstrategie und Kanäle",
+      points: [
+        "Ehemals Vice President und COO in Wachstumsunternehmen",
+        "Siebenstelliger wiederkehrender Umsatz über Partnervertrieb, Markteintritt in drei Ländern",
+        "Neue B2B Einheit aufgebaut: ein Drittel des Jahresumsatzes nach sechs Monaten",
       ],
+      sprint: "Bewertet Ihre Vertriebswege und entwickelt die Kanalstrategie.",
     },
     {
-      name: "[ Name Gründer 2 ]",
-      role: "Innovation-, Strategie- und Prozessexperte",
-      text: "Strategieexperte für gewachsene Strukturen. Er begleitet etablierte Unternehmen bei der Modernisierung ihrer (Verkaufs-)Prozesse.",
-      facts: [
-        { label: "Fokus:", text: "Daten, Prozesse & AI-Workflows" },
-        { label: "Hintergrund:", text: "Startups, Corporate Innovation & Strategieberatung" },
+      name: "tbd 2",
+      role: "Analyse, Prozesse und Geschäftsmodelle",
+      points: [
+        "Über sieben Jahre Geschäftsmodellentwicklung in einem großen, regulierten Unternehmen",
+        "Startup mitgegründet, von der Validierung bis zum Marktstart",
       ],
+      sprint: "Führt die Bestandsaufnahme, wertet Ihre Daten aus und übersetzt die Strategie in Abläufe für Ihr Team.",
     },
   ],
 };
