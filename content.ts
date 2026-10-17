@@ -14,11 +14,30 @@ export const brand = {
 };
 
 export const hero = {
-  eyebrow: "Vertriebsstrategie für den Mittelstand",
-  headline: "Vertriebskonzept in 14 Tagen: Die richtigen Hebel für Ihr Wachstum finden.",
-  sub: "Wir analysieren Ihr Geschäftsmodell und identifizieren passende Vertriebshebel datenbasiert. In zwei Wochen entsteht Ihr glasklares Vertriebskonzept. Individuell abgestimmt auf Ihr Unternehmen und sofort umsetzbar für Ihr Team.",
+  // Kleine blaue Zeile über der Headline, semantisch die H1 der Seite
+  eyebrow: "Vertriebskonzept in 14 Tagen für den Mittelstand",
+  headline: "Gute Produkte gibt es viele. Planbaren Umsatz haben wenige.",
+  sub: "In 14 Tagen wissen Sie, welche ein bis zwei Vertriebswege für Ihr Unternehmen funktionieren und welche Sie streichen können. Wir liefern Ihr Vertriebskonzept zum Festpreis. Die Umsetzung übernimmt Ihr eigenes Team.",
   cta: primaryCta,
 };
+
+// Beispielkarte im Hero, als Ausschnitt aus einem Vertriebskonzept
+export const channelCard = {
+  title: "Kanalbewertung",
+  rows: [
+    { channel: "Partner und Tippgeber", status: "expand", reason: "Höchste Abschlussquote, bisher nicht systematisch genutzt." },
+    { channel: "Google Ads", status: "reduce", reason: "Budget auf wenige kaufnahe Suchbegriffe begrenzen." },
+    { channel: "Messen", status: "drop", reason: "Hohe Kosten, kaum Abschlüsse in den letzten zwei Jahren." },
+    { channel: "Nachfassen nach Angebot", status: "new", reason: "Fester Ablauf nach 3, 7 und 14 Tagen." },
+  ],
+  statusLabels: {
+    expand: "Ausbauen",
+    reduce: "Reduzieren",
+    drop: "Streichen",
+    new: "Neu einführen",
+  },
+  note: "Beispiel aus einem Vertriebskonzept, anonymisiert.",
+} as const;
 
 // Problem-Section: Spektrum der Vertriebskanäle (direkt nach dem Hero)
 export const spectrum = {
