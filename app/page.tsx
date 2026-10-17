@@ -6,6 +6,7 @@ import SpectrumSlider from "./SpectrumSlider";
 import UseCases from "./UseCases";
 import CaseStudy from "./CaseStudy";
 import About from "./About";
+import ChannelCard from "./ChannelCard";
 
 function Section({
   id,
@@ -49,21 +50,25 @@ export default function Home() {
 
       <main>
         {/* Hero */}
-        <section className="mx-auto max-w-5xl px-4 pb-20 pt-12 sm:pt-20">
-          <p className="text-sm font-medium uppercase tracking-wide text-accent">{hero.eyebrow}</p>
-          <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-            {hero.headline}
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted">{hero.sub}</p>
-          <div className="mt-8">
-            <a
-              href="#kontakt"
-              className="inline-block rounded-md bg-accent px-6 py-3 font-medium text-white hover:opacity-90"
-            >
-              {hero.cta}
-            </a>
-            <p className="mt-2 text-[0.85rem] text-[#787774]">{primaryCtaNote}</p>
+        <section className="mx-auto grid max-w-5xl gap-12 px-4 pb-20 pt-12 sm:pt-20 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-10">
+          <div className="min-w-0">
+            <h1 className="text-sm font-medium uppercase tracking-wide text-accent">{hero.eyebrow}</h1>
+            <p className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-balance sm:text-5xl">
+              {hero.headline}
+            </p>
+            {/* Dunkleres Grau als text-muted: AA auch auf den bläulichen Stellen des Hintergrundverlaufs */}
+            <p className="mt-6 max-w-2xl text-lg text-[#3d4350]">{hero.sub}</p>
+            <div className="mt-8">
+              <a
+                href="#kontakt"
+                className="inline-block rounded-md bg-accent px-6 py-3 font-medium text-white hover:opacity-90"
+              >
+                {hero.cta}
+              </a>
+              <p className="mt-2 text-[0.85rem] text-[#787774]">{primaryCtaNote}</p>
+            </div>
           </div>
+          <ChannelCard />
         </section>
 
         {/* Problem: Spektrum der Vertriebskanäle */}
