@@ -89,14 +89,46 @@ export const usps = [
   },
 ];
 
-export const stepsIntro =
-  "Schritt 01 und 02 erfolgen als fester 14-Tage-Prozess. Nach zwei Wochen liegt Ihr fertig ausgearbeitetes Konzept für den Vertrieb vor.";
-
-export const steps = [
-  { title: "Bestandsaufnahme", text: "[Analyse bestehender Vertriebskanäle, Kennzahlen und Verkaufsabschlüsse. Ergebnis: Schwachstellen-Matrix & Daten-Status-Quo.]" },
-  { title: "Vertriebskonzept & Systemaufbau", text: "[Priorisierung der besten Vertriebskanäle, Gesprächsleitfäden & Ablaufstruktur. Ergebnis: Fertiges Vertriebskonzept inklusive priorisierter Maßnahmenliste für Ihr internes Team.]" },
-  { title: "Begleitende Nachbereitung (optional)", text: "[Wöchentlicher Austausch zu Daten und Verkaufsabläufen zur Begleitung der internen Umsetzung. Keine operative Akquise durch uns.]" },
-];
+// Leistungsumfang: ersetzt die frühere Prozess-Sektion.
+// \u00a0 = geschütztes Leerzeichen, damit Zahl und Einheit nicht getrennt werden.
+export const scope = {
+  eyebrow: "Der Prozess",
+  headline: "Das liegt nach 14\u00a0Tagen auf Ihrem Tisch.",
+  deliverables: {
+    heading: "Das erhalten Sie",
+    items: [
+      {
+        title: "Kanalbewertung",
+        text: "Alle aktuellen und möglichen Vertriebswege bewertet, mit klarer Empfehlung je Kanal: ausbauen, reduzieren, streichen oder neu einführen.",
+      },
+      {
+        title: "Maßnahmenplan für 90\u00a0Tage",
+        text: "Priorisierte Schritte mit Reihenfolge und Zuständigkeit in Ihrem Team.",
+      },
+      {
+        title: "Gesprächsleitfaden",
+        text: "Argumente und Gesprächsablauf, damit nicht nur die Geschäftsführung verkaufen kann.",
+      },
+      {
+        title: "Nachfassablauf",
+        text: "Fester Ablauf, wie und wann Angebote nachgefasst werden.",
+      },
+    ],
+  },
+  timeline: {
+    heading: "So läuft es ab",
+    steps: [
+      { label: "Woche\u00a01", text: "Bestandsaufnahme Ihrer Vertriebswege, Zahlen und Abschlüsse.", optional: false },
+      { label: "Woche\u00a02", text: "Konzept, Maßnahmenplan und Übergabe an Ihr Team.", optional: false },
+      { label: "Danach optional", text: "Wöchentlicher Austausch zur Umsetzung. Keine operative Akquise durch uns.", optional: true },
+    ],
+  },
+  effort: {
+    label: "Ihr Aufwand",
+    // TODO PRÜFEN: Aufwand vor Veröffentlichung bestätigen
+    text: "Zwei Termine à\u00a090\u00a0Minuten und die Bereitstellung vorhandener Zahlen.",
+  },
+};
 
 // Praxisbeispiel: dunkle Section im Stil der Anwendungsfälle
 export const caseStudy = {

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { brand, primaryCtaNote, hero, spectrum, solution, usps, steps, stepsIntro, pricing } from "@/content";
+import { brand, primaryCtaNote, hero, spectrum, solution, usps, pricing } from "@/content";
 import ContactForm from "./ContactForm";
 import SpectrumSlider from "./SpectrumSlider";
 import UseCases from "./UseCases";
 import CaseStudy from "./CaseStudy";
 import About from "./About";
 import ChannelCard from "./ChannelCard";
+import Scope from "./Scope";
 
 function Section({
   id,
@@ -111,18 +112,8 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* Vorgehen */}
-        <Section eyebrow="Der Prozess" title="Ihr Vertriebskonzept als strukturierter 14-Tage-Prozess." subtitle={stepsIntro}>
-          <ol className="grid gap-6 sm:grid-cols-3">
-            {steps.map((s, i) => (
-              <li key={s.title}>
-                <span className="text-sm font-semibold text-accent">0{i + 1}</span>
-                <h3 className="mt-1 font-semibold">{s.title}</h3>
-                <p className="mt-2 text-sm text-muted">{s.text}</p>
-              </li>
-            ))}
-          </ol>
-        </Section>
+        {/* Leistungsumfang */}
+        <Scope />
 
         {/* Praxisbeispiel */}
         <CaseStudy />
