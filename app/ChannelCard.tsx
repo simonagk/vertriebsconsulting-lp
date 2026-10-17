@@ -13,19 +13,23 @@ const badgeStyles: Record<Status, string> = {
 export default function ChannelCard() {
   return (
     <figure className="w-full">
+      <figcaption className="mb-3 text-sm font-medium uppercase tracking-wide text-accent">{channelCard.label}</figcaption>
       <div
         className="overflow-hidden rounded-lg border border-[#E5E7EB] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)]"
         aria-labelledby="kanalbewertung-titel"
         role="group"
       >
-        <div className="flex items-center gap-2 border-b border-[#E5E7EB] px-5 py-3.5">
-          <svg viewBox="0 0 24 24" className="h-4 w-4 text-[#787774]" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
+        <div className="flex items-start gap-2 border-b border-[#E5E7EB] px-5 py-3.5">
+          <svg viewBox="0 0 24 24" className="mt-0.5 h-4 w-4 shrink-0 text-[#787774]" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
             <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" strokeLinejoin="round" />
             <path d="M14 3v5h5" strokeLinejoin="round" />
           </svg>
-          <p id="kanalbewertung-titel" className="text-sm font-semibold text-[#191919]">
-            {channelCard.title}
-          </p>
+          <div className="min-w-0">
+            <p id="kanalbewertung-titel" className="text-sm font-semibold text-[#191919]">
+              {channelCard.title}
+            </p>
+            <p className="mt-0.5 text-sm text-[#5F6168]">{channelCard.subtitle}</p>
+          </div>
         </div>
 
         <ul className="divide-y divide-[#E5E7EB]">
@@ -44,7 +48,6 @@ export default function ChannelCard() {
           ))}
         </ul>
       </div>
-      <figcaption className="mt-3 text-sm text-[#5F6168]">{channelCard.note}</figcaption>
     </figure>
   );
 }
