@@ -161,7 +161,7 @@ export default function Home() {
           <Link href="/" aria-label={`${brand.name} Startseite`} className="inline-block">
             <Image src="/logo.png" alt={brand.name} width={857} height={194} className="h-8 w-auto" />
           </Link>
-          <p className="mt-5 text-sm font-bold uppercase tracking-wide text-[#0052FF]">{brand.claim}</p>
+          <p className="mt-5 text-sm font-bold uppercase tracking-wide text-[#1C60E2]">{brand.claim}</p>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">{brand.mission}</p>
         </div>
         <div className="mx-auto mt-10 max-w-5xl px-4">

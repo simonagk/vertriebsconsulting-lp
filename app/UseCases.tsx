@@ -31,7 +31,7 @@ export default function UseCases() {
     <section id="anwendungsfaelle" className="bg-[#191919] py-16 text-white sm:py-20">
       <div className="mx-auto max-w-5xl px-4">
         <hgroup>
-          <p className="text-sm font-medium uppercase tracking-wide text-[#0052FF]">{useCases.eyebrow}</p>
+          <p className="text-sm font-medium uppercase tracking-wide text-[#1C60E2]">{useCases.eyebrow}</p>
           <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{useCases.headline}</h2>
           <p className="mt-3 max-w-2xl text-white/70">{useCases.sub}</p>
         </hgroup>
@@ -40,9 +40,9 @@ export default function UseCases() {
           {useCases.cases.map((c) => (
             <article
               key={c.title}
-              className="flex flex-col rounded-lg border border-[#333333] border-t-[#0052FF] bg-[#222222] p-6"
+              className="flex flex-col rounded-lg border border-[#333333] border-t-[#1C60E2] bg-[#222222] p-6"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-md border border-[#0052FF]/40 bg-[#0052FF]/10 text-[#0052FF]">
+              <span className="flex h-10 w-10 items-center justify-center rounded-md border border-[#1C60E2]/40 bg-[#1C60E2]/10 text-[#1C60E2]">
                 <svg
                   viewBox="0 0 24 24"
                   className="h-5 w-5"
@@ -63,7 +63,7 @@ export default function UseCases() {
 
               <div className="mt-5 border-t border-[#333333] pt-5">
                 <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-white">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#0052FF]" aria-hidden />
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#1C60E2]" aria-hidden />
                   {useCases.solutionLabel}
                 </p>
                 <p className="mt-1 text-sm leading-relaxed text-white">{c.solution}</p>
