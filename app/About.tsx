@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section id="ueber-uns" className="border-t border-[#E5E7EB] bg-[#FAFAFA] py-16 text-[#191919] sm:py-20">
       <div className="mx-auto max-w-5xl px-4">
-        <hgroup>
+        <hgroup data-reveal>
           <p className="text-sm font-medium uppercase tracking-wide text-accent">{about.eyebrow}</p>
           <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{about.headline}</h2>
           <p className="mt-3 max-w-2xl text-muted">{about.sub}</p>
@@ -12,7 +12,7 @@ export default function About() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {about.founders.map((f) => (
-            <article key={f.name} className="flex flex-col rounded-lg border border-[#E5E7EB] bg-white p-5 sm:p-6">
+            <article key={f.name} data-reveal className="flex flex-col rounded-lg border border-[#E5E7EB] bg-white p-5 sm:p-6">
               {/* Unter 1024 px steht die Rolle unter Foto und Name, damit sie in eine Zeile passt */}
               <div className="grid grid-cols-[2.75rem_minmax(0,1fr)] items-center gap-x-3 lg:grid-cols-[3.5rem_minmax(0,1fr)] lg:gap-x-4">
                 {/* Platzhalter für rundes Porträtfoto */}

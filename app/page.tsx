@@ -6,6 +6,7 @@ import SpectrumSlider from "./SpectrumSlider";
 import About from "./About";
 import ChannelCard from "./ChannelCard";
 import Scope from "./Scope";
+import Reveal from "./Reveal";
 
 function Section({
   id,
@@ -23,12 +24,12 @@ function Section({
   return (
     <section id={id} className="border-t border-line py-16 sm:py-20">
       <div className="mx-auto max-w-5xl px-4">
-        <hgroup>
+        <hgroup data-reveal>
           {eyebrow && <p className="mb-3 text-sm font-medium uppercase tracking-wide text-accent">{eyebrow}</p>}
           <h2 className="max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{title}</h2>
           {subtitle && <p className="mt-3 max-w-2xl text-muted">{subtitle}</p>}
         </hgroup>
-        <div className="mt-8">{children}</div>
+        <div data-reveal className="mt-8">{children}</div>
       </div>
     </section>
   );
@@ -73,7 +74,7 @@ export default function Home() {
         {/* Problem: Spektrum der Vertriebskanäle */}
         <section id="spektrum" className="border-t border-line py-16 sm:py-20">
           <div className="mx-auto max-w-5xl px-4">
-            <hgroup>
+            <hgroup data-reveal>
               <p className="text-sm font-medium uppercase tracking-wide text-accent">{spectrum.eyebrow}</p>
               <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight sm:text-3xl">{spectrum.headline}</h2>
             </hgroup>
@@ -81,7 +82,7 @@ export default function Home() {
             {/* Drei typische Situationen in Kundensprache */}
             <div className="mt-10 grid gap-4 md:grid-cols-3 md:gap-6">
               {spectrum.situations.map((s) => (
-                <figure key={s.quote} className="flex flex-col rounded-lg border border-line bg-white p-6">
+                <figure key={s.quote} data-reveal className="flex flex-col rounded-lg border border-line bg-white p-6">
                   <blockquote className="text-lg font-semibold leading-snug tracking-tight">
                     <p>„{s.quote}“</p>
                   </blockquote>
@@ -93,7 +94,7 @@ export default function Home() {
             </div>
 
             {/* Schieberegler: Spektrum der Vertriebswege */}
-            <div className="mt-12 rounded-lg border border-line bg-white p-6 sm:p-8">
+            <div data-reveal className="mt-12 rounded-lg border border-line bg-white p-6 sm:p-8">
               <h3 className="text-xl font-semibold tracking-tight">{spectrum.sliderHeading}</h3>
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{spectrum.sub}</p>
 
@@ -144,6 +145,8 @@ export default function Home() {
           <ContactForm />
         </Section>
       </main>
+
+      <Reveal />
 
       {/* Footer */}
       <footer className="border-t border-line">

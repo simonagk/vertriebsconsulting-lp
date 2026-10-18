@@ -1,3 +1,4 @@
+import type React from "react";
 import { channelCard } from "@/content";
 
 type Status = (typeof channelCard.rows)[number]["status"];
@@ -33,12 +34,12 @@ export default function ChannelCard() {
         </div>
 
         <ul className="divide-y divide-[#E5E7EB]">
-          {channelCard.rows.map((r) => (
-            <li key={r.channel} className="px-5 py-4">
+          {channelCard.rows.map((r, i) => (
+            <li key={r.channel} className="cc-row px-5 py-4" style={{ "--i": i } as React.CSSProperties}>
               <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3">
                 <p className="pt-0.5 text-[15px] font-semibold leading-snug text-[#191919]">{r.channel}</p>
                 <span
-                  className={`inline-flex shrink-0 items-center rounded-md border px-2 py-0.5 text-sm font-medium ${badgeStyles[r.status]}`}
+                  className={`cc-badge inline-flex shrink-0 items-center rounded-md border px-2 py-0.5 text-sm font-medium ${badgeStyles[r.status]}`}
                 >
                   {channelCard.statusLabels[r.status]}
                 </span>
